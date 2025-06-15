@@ -1,0 +1,29 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ignorar node_modules em qualquer subdiretório
+**/node_modules/
+**/dist/
+
+# Outros arquivos de build
+dist-ssr/
+
+# Ignorar arquivos locais
+*.local
+
+# Diretórios e arquivos de editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
