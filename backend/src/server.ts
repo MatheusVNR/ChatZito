@@ -21,7 +21,7 @@ io.on('connection', (socket) => {
       type: "system",
       text: "entrou na sala.",
       user,
-      timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false }),
+      timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false, timeZone: "America/Sao_Paulo" }),
     });
   });
 
@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
       type: "system",
       text: "saiu da sala.",
       user,
-      timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false }),
+      timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false, timeZone: "America/Sao_Paulo" }),
     });
   });
 
@@ -61,7 +61,7 @@ io.on('connection', (socket) => {
         type: "system",
         text: "desconectou.",
         user: userName,
-        timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false }),
+        timestamp: new Date().toLocaleTimeString("pt-BR", { hour12: false, timeZone: "America/Sao_Paulo" }),
       });
     }
   });
