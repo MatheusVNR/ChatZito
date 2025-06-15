@@ -28,7 +28,9 @@ type WSMessage =
       timestamp: string;
     };
 
-const SOCKET_HOST = "http://192.168.201.2:3001";
+const SOCKET_HOST = process.env.NODE_ENV === 'production'
+  ? 'wss://chatzito-production.up.railway.app'
+  : 'ws://localhost:3001';
 
 const ChatWindow: React.FC = () => {
   const [messages, setMessages] = useState<WSMessage[]>([]);
